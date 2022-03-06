@@ -1,11 +1,15 @@
 import os
+import discord
+from discord import client
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix = '>')
 TOKEN = os.getenv("DISCORD_TOKEN")
 
+
 @bot.event
 async def on_ready():
+    await client.change_presence(activity=discord.Game('CMPUT 175'))
     print(f'Logged in as {bot.user.name}({bot.user.id})')
 
 @bot.command()
