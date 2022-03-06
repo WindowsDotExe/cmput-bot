@@ -1,6 +1,8 @@
 import os
 import discord
+from discord.ext.commands import Bot
 from discord.ext import commands
+import asyncio
 
 bot = commands.Bot(command_prefix = '>')
 TOKEN = os.getenv("DISCORD_TOKEN")
@@ -8,6 +10,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="you."))
     print(f'Logged in as {bot.user.name}({bot.user.id})')
 
 @bot.command()
