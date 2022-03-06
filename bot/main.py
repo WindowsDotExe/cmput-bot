@@ -14,8 +14,8 @@ async def ping(ctx):
 
 @bot.command()
 async def say(ctx, arg):
-    await ctx.message.delete()
     await ctx.send(arg)
+    await ctx.message.delete()
 
 if __name__ == "__main__":
     bot.run(TOKEN)
