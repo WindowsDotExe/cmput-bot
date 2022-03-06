@@ -22,10 +22,5 @@ async def say(ctx, *, arg):
     await ctx.send(arg)
     await ctx.message.delete()
 
-@bot.command()
-async def avatar(ctx, *,  avamember : discord.Member=None):
-    userAvatarUrl = avamember.avatar_url
-    await ctx.send(userAvatarUrl)
-
 if __name__ == "__main__":
     bot.run(TOKEN)
