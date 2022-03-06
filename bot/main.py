@@ -13,7 +13,7 @@ async def ping(ctx):
     await ctx.send('pong!')
 
 @bot.command()
-async def say(ctx, arg):
+async def say(ctx, *, arg):
     await ctx.send(arg)
     await ctx.message.delete()
 
