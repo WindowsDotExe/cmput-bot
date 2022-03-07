@@ -15,10 +15,17 @@ async def on_ready():
 
 @bot.command()
 async def ping(ctx):
+    '''
+    Self explanatory much?
+    '''
     await ctx.send('pong!')
 
 @bot.command()
 async def say(ctx, *, arg):
+    '''
+    Send a message from the bot account.
+    Format: >send (arguments)
+    '''
     await ctx.send(f'{arg}\n*Author: {ctx.message.author.name}*')
     await ctx.message.delete()
 
