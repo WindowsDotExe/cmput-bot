@@ -22,5 +22,9 @@ async def say(ctx, *, arg):
     await ctx.send(arg)
     await ctx.message.delete()
 
+@bot.command()
+async def due(ctx):
+    await ctx.send("**Here's what's due this week:** Lab 7 (Saturday March 12 @ 11:59 PM)")
+
 if __name__ == "__main__":
     bot.run(TOKEN)
