@@ -21,6 +21,7 @@ async def ping(ctx):
 async def say(ctx, *, arg):
     await ctx.send(arg)
     await ctx.message.delete()
+    await ctx.send(f'*Author: {ctx.message.author.name}*')
 
 @bot.command()
 async def due(ctx):
