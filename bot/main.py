@@ -24,7 +24,7 @@ async def say(ctx, *, arg):
 
 @bot.command()
 async def due(ctx):
-    await ctx.send("**Here's what's due this week:** Lab 7 (Saturday March 12 @ 11:59 PM)")
+    await ctx.send("**Here's what's due this week:**\n Post-test 7: Doubly-Linked Lists (Wednesday March 9 @ 11:55 PM)\n Lab 7 (Saturday March 12 @ 11:59 PM)\n")
 
 if __name__ == "__main__":
     bot.run(TOKEN)
