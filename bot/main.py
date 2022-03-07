@@ -24,7 +24,7 @@ async def ping(ctx):
 async def say(ctx, *, arg):
     '''
     Send a message from the bot account.
-    Format: >send (arguments)
+    Format: >say (arguments)
     '''
     await ctx.send(f'{arg}\n*Author: {ctx.message.author.name}*')
     await ctx.message.delete()
