@@ -21,9 +21,12 @@ async def ping(ctx):
 async def say(ctx, *, arg):
     await ctx.send(f'{arg}\n*Author: {ctx.message.author.name}*')
     await ctx.message.delete()
-    
+
 @bot.command()
 async def due(ctx):
+    '''
+    Displays all assignments/labs/etc. due in the given week.
+    '''
     await ctx.send("**Here's what's due this week:**\n - Post-test 7: Doubly-Linked Lists (Wednesday March 9 @ 11:55 PM Edmonton time)\n - Lab 7 (Saturday March 12 @ 11:59 PM Edmonton time)\n")
     await ctx.message.delete()
 
