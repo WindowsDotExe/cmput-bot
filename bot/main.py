@@ -34,7 +34,7 @@ async def due(ctx):
     '''
     Displays all assignments/labs/etc. due in the given week.
     '''
-    await ctx.send("**Here's what's due this week:**\n - Lab 7 (Saturday March 12 @ 11:59 PM Edmonton time)\n\n Due soon:\n - Assignment 7: AbacoStack Game (Friday April 1 @ 11:55 PM Edmonton time)")
+    await ctx.send("**Here's what's due this week:**\n - Post-test 8: Search-Recursion-Sorting\n\n - Lab 8 (Saturday March 19 @ 11:59 PM Edmonton time)\n\n Due soon:\n - Assignment 7: AbacoStack Game (Friday April 1 @ 11:55 PM Edmonton time)")
     await ctx.message.delete()
 
 if __name__ == "__main__":
